@@ -20,6 +20,6 @@ done
 
 FRIENDLY_NAME=$(pactl list sinks | grep -A 20 "$TARGET" | grep "Description:" | cut -d: -f2- | xargs)
 
-# 4. Notify using mako (via notify-send)
+# Notify using mako (via notify-send)
 # Mako picks up standard desktop notifications.
 notify-send -a "System" -t 2000 "Audio Switched" "Output: $FRIENDLY_NAME"
