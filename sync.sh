@@ -1,5 +1,6 @@
 # IMPORTANT: This file is only for commiting my config to Github
 #            and this script is probably useless for you, so don't use it
+
 #!/bin/bash
 
 TARGET_DIR="$HOME/Documents/dotfiles"
@@ -8,6 +9,7 @@ CONFIGS=("fastfetch" "hypr" "kitty" "mako" "nvim" "rofi")
 
 mkdir -p "$TARGET_DIR/scripts"
 sudo cp -r /usr/local/bin/. "$TARGET_DIR/scripts/"
+cp ~/.bashrc "$TARGET_DIR"
 
 mkdir -p "$CONFIG_TARGET"
 
