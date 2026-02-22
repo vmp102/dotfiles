@@ -1,20 +1,14 @@
 #!/usr/bin/env bash
 
-## Author : Aditya Shakya (adi1090x)
-## Modified by vmp102
+dir="$HOME/.config/rofi/powermenu"
+theme='style'
 
-# Current Theme
-dir="$HOME/.config/rofi/powermenu/type-2"
-theme='style-2'
-
-# CMDs
 uptime="`uptime -p | sed -e 's/up //g'`"
 
-# Options (Reordered: Shutdown, Reboot, Logout, Lock)
+lock=''
 shutdown=''
 reboot=''
 logout='󰍃'
-lock=''
 yes=''
 no=''
 
@@ -27,7 +21,6 @@ rofi_cmd() {
         -theme ${dir}/${theme}.rasi
 }
 
-# Confirmation CMD
 confirm_cmd() {
     rofi -theme-str 'window {location: center; anchor: center; fullscreen: false; width: 350px;}' \
         -theme-str 'mainbox {children: [ "message", "listview" ];}' \
@@ -40,17 +33,13 @@ confirm_cmd() {
         -theme ${dir}/${theme}.rasi
 }
 
-# Ask for confirmation
 confirm_exit() {
     echo -e "$yes\n$no" | confirm_cmd
 }
 
-# Pass variables to rofi dmenu (Updated order and count)
 run_rofi() {
-    echo -e "$shutdown\n$reboot\n$logout\n$lock" | rofi_cmd
+    echo -e "$lock\n$shutdown\n$reboot\n$logout" | rofi_cmd
 }
-
-# Execute Command
 
 run_cmd() {
     if [[ $1 == '--lock' ]]; then
@@ -78,7 +67,7 @@ run_cmd() {
         fi
     fi
 }
-# Actions
+
 chosen="$(run_rofi)"
 case ${chosen} in
     $shutdown)
