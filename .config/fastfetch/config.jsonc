@@ -1,82 +1,61 @@
-//   _____ _____ _____ _____ _____ _____ _____ _____ _____ 
-//  |   __|  _  |   __|_   _|   __|   __|_   _|     |  |  |
-//  |   __|     |__   | | | |   __|   __| | | |   --|     |
-//  |__|  |__|__|_____| |_| |__|  |_____| |_| |_____|__|__|  NYARCH
-//
-//  by Bina
-
-                                                       
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-	    "source": "~/.config/fastfetch/nyarch.png",
-	    "type": "kitty",
-	    "height": 14,
-	    "padding": {
-		    "top": 1
-	    }
+        "source": "arch_small",
+        "padding": {
+            "top": 1
+        },
+        "color": {
+            "1": "94",
+            "2": "34"
+        }
     },
     "display": {
-        "separator": " "
+        "separator": "  "
     },
     "modules": [
         "break",
-        "break",
-        "break",
         {
             "type": "title",
-            "keyWidth": 10
-        },
-        {
-            "type": "custom",
-            "format": "~~~~~~~~~~~~~~~~~~~~~~~~~~",
+            "color": {
+                "user": "94",
+                "at": "37",
+                "host": "94"
+            }
         },
         {
             "type": "os",
-            "key": "~ ",
-            "keyColor": "34",  // = color4
+            "key": "os    ",
+            "keyColor": "34"
         },
         {
             "type": "kernel",
-            "key": "~ ",
-            "keyColor": "34",
+            "key": "kernel",
+            "keyColor": "34"
+        },
+        {
+            "type": "host",
+            "format": "{5} {1}",
+            "key": "host  ",
+            "keyColor": "34"
         },
         {
             "type": "packages",
             "format": "{} (pacman)",
-            "key": "~ ",
-            "keyColor": "34",  
-        },
-        {
-            "type": "shell",
-            "key": "~ ",
-            "keyColor": "34", 
-        },
-        {
-            "type": "terminal",
-            "key": "~ ",
-            "keyColor": "34", 
-        },
-        {
-            "type": "wm",
-            "key": "~ ",
-            "keyColor": "34", 
+            "key": "pkgs  ",
+            "keyColor": "34"
         },
         {
             "type": "uptime",
-            "key": "~ ",
-            "keyColor": "34", 
+            "format": "{2}h {3}m",
+            "key": "uptime",
+            "keyColor": "34"
         },
         {
-            "type": "media",
-            "key": "~ ",
-            "keyColor": "34", 
+            "type": "memory",
+            "key": "memory",
+            "keyColor": "34"
         },
-        {
-            "type": "player",
-            "key": "~ ",
-            "keyColor": "34", 
-        },
-        "break",
+        "break"
     ]
 }
