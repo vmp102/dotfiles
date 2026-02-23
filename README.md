@@ -21,6 +21,7 @@ Dotfiles      -> ~/.config/
 | **Fuzzel (menu)** | `SUPER` + `SPACE` |
 | **Toggle Floating/Tiling** | `SUPER` + `V` |
 | **Fullscreen** | `SUPER` + `F` |
+| **Promote Window** | `SUPER` + `W` |
 | **Kill Active** | `CTRL` + `Q` |
 | **Switch Focus** | `SUPER` + `D` |
 | **Toggle Gaps** | `SUPER` + `G` |
