@@ -2,6 +2,8 @@
 # ~/.bashrc
 #
 
+# DEPRECATED, USE ZSH INSTEAD
+
 [[ $- != *i* ]] && return
 
 alias grep='grep --color=auto'
