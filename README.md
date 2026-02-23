@@ -11,32 +11,25 @@ Dotfiles      -> ~/.config/
 .zshrc        -> ~/
 
 
-**KEYBINDS:**
-Modifier key: SUPER
+### KEYBINDS (Main Modifier key: SUPER)
 
-
-Terminal:      SUPER + RETURN
-Web Browser:   SUPER + B
-File Manager:  SUPER + E
-Fuzzel (menu): SUPER + SPACE
-
-
-Toggle Floating/Tiling: SUPER + V
-Fullscreen:             SUPER + F
-Kill Active:            CTRL + Q
-Switch Focus:           SUPER + D
-Toggle Gaps:            SUPER + G
-
-
-Screenshot:     SUPER + Q
-Color Picker:   SUPER + CTRL + Q
-Region Capture: SUPER + O (capital o)
-
-
-PL Keyboard Layout: SUPER + Z
-EE Keyboard Layout: SUPER + X
-DE Keyboard Layout: SUPER + C
-
-Output Device 1: SUPER + R
-Output Device 2: SUPER + T
-Output Device 3: SUPER + Y
+| Action | Shortcut |
+| :--- | :--- |
+| **Terminal** | `SUPER` + `RETURN` |
+| **Web Browser** | `SUPER` + `B` |
+| **File Manager** | `SUPER` + `E` |
+| **Fuzzel (menu)** | `SUPER` + `SPACE` |
+| **Toggle Floating/Tiling** | `SUPER` + `V` |
+| **Fullscreen** | `SUPER` + `F` |
+| **Kill Active** | `CTRL` + `Q` |
+| **Switch Focus** | `SUPER` + `D` |
+| **Toggle Gaps** | `SUPER` + `G` |
+| **Screenshot** | `SUPER` + `Q` |
+| **Color Picker** | `SUPER` + `CTRL` + `Q` |
+| **Region Capture** | `SUPER` + `O` (capital O) |
+| **PL Keyboard Layout** | `SUPER` + `Z` |
+| **EE Keyboard Layout** | `SUPER` + `X` |
+| **DE Keyboard Layout** | `SUPER` + `C` |
+| **Output Device 1** | `SUPER` + `R` |
+| **Output Device 2** | `SUPER` + `T` |
+| **Output Device 3** | `SUPER` + `Y` |
