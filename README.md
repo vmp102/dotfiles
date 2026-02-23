@@ -33,3 +33,6 @@ Dotfiles      -> ~/.config/
 | **Output Device 1** | `SUPER` + `R` |
 | **Output Device 2** | `SUPER` + `T` |
 | **Output Device 3** | `SUPER` + `Y` |
+| **Switch to workspace** | `SUPER` + `NUM` |
+| **Move window to workspace** | `SUPER` + `CTRL` + `NUM` |
+
