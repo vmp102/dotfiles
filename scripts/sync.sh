@@ -10,7 +10,7 @@ rm -rf "$CONFIG_TARGET"/*
 
 mkdir -p "$SCRIPTS_TARGET"
 sudo cp -r /usr/local/bin/. "$SCRIPTS_TARGET/"
-cp ~/.bashrc "$TARGET_DIR"
+cp ~/.zshrc "$TARGET_DIR"
 
 mkdir -p "$CONFIG_TARGET"
 
