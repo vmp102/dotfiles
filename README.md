@@ -14,10 +14,12 @@ Dotfiles      -> ~/.config/
 **KEYBINDS:**
 Modifier key: SUPER
 
+
 Terminal:      SUPER + RETURN
 Web Browser:   SUPER + B
 File Manager:  SUPER + E
 Fuzzel (menu): SUPER + SPACE
+
 
 Toggle Floating/Tiling: SUPER + V
 Fullscreen:             SUPER + F
@@ -25,9 +27,11 @@ Kill Active:            CTRL + Q
 Switch Focus:           SUPER + D
 Toggle Gaps:            SUPER + G
 
+
 Screenshot:     SUPER + Q
 Color Picker:   SUPER + CTRL + Q
 Region Capture: SUPER + O (capital o)
+
 
 PL Keyboard Layout: SUPER + Z
 EE Keyboard Layout: SUPER + X
