@@ -8,10 +8,15 @@ source $ZSH/oh-my-zsh.sh
 
 # --- Aliases ---
 alias grep='grep --color=auto'
+
 alias ls='eza -lh --git --icons --time-style=long-iso -a'
 alias mkdir='mkdir -p'
+
 alias sv='sudo -E nvim'
 alias nv='nvim'
+
+alias chypr='nvim ~/.config/hypr/'
+alias upddot='sync.sh; cd ~/Documents/dotfiles; git add .'
 
 # --- Keybindings ---
 bindkey -s '^f' 'fastfetch^M'
