@@ -1,1 +1,3 @@
 default-timeout=5000
+max-history=100
+height=1000
