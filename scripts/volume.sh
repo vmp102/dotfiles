@@ -27,8 +27,9 @@ if [ "$1" == "toggle" ]; then
     display_time=2000
   fi
 
-  notify-send -h string:x-canonical-private-synchronous:sys-notify \
-    -u low -t "$display_time" "$msg"
+  # FIXED: Added stack-tag for Mako OSD behavior
+  notify-send -h string:x-dunst-stack-tag:media-notify \
+    -a "System" -u low -t "$display_time" "$msg"
   exit 0
 fi
 
@@ -42,10 +43,12 @@ current_vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print int($2 * 100)}
 is_muted=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -c "\[MUTED\]")
 
 if [ "$is_muted" -eq 1 ]; then
-  notify-send -h string:x-canonical-private-synchronous:sys-notify \
-    -u low -t 500 "Muted"
+  # FIXED: Swapped synchronous hint for stack-tag
+  notify-send -h string:x-dunst-stack-tag:volume-notify \
+    -a "System" -u low -t 500 "Muted"
 else
-  notify-send -h string:x-canonical-private-synchronous:sys-notify \
+  # FIXED: Swapped synchronous hint for stack-tag and kept your percentage logic
+  notify-send -h string:x-dunst-stack-tag:volume-notify \
     -h int:value:"$current_vol" \
-    -u low -t 500 "Volume: ${current_vol}%"
+    -a "System" -u low -t 500 "Volume: ${current_vol}%"
 fi
