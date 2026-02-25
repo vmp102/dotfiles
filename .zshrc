@@ -11,6 +11,7 @@ alias grep='grep --color=auto'
 
 alias ls='eza -lh --git --icons --time-style=long-iso -a'
 alias mkdir='mkdir -p'
+alias cmatrix='cmatrix -C cyan'
 
 alias sv='sudo -E nvim'
 alias nv='nvim'
