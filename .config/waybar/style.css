@@ -12,6 +12,7 @@
 
 window#waybar {
     background-color: #000000;
+    font-weight: 600;
     border-bottom: none;
 }
 
@@ -19,6 +20,7 @@ window#waybar {
     padding: 0 5px;
     color: @nord_4;
     background: transparent;
+    font-weight: 600;
 }
 
 #workspaces button.active,
@@ -31,16 +33,19 @@ window#waybar {
     color: @nord_4;
     font-weight: bold;
     padding: 0 10px;
+    font-weight: 600;
 }
 
 #pulseaudio {
     color: @nord_4;
     padding: 0 10px;
+    font-weight: 600;
 }
 
 #clock {
     color: @nord_4;
     padding: 0 10px;
+    font-weight: 600;
 }
 
 .modules-left > widget:first-child > #workspaces {
