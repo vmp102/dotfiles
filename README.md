@@ -27,10 +27,10 @@ Dotfiles      -> ~/.config/
 | **Toggle Gaps** | `SUPER` + `G` |
 | **Screenshot** | `SUPER` + `Q` |
 | **Color Picker** | `SUPER` + `CTRL` + `Q` |
-| **Region Capture** | `SUPER` + `O` (capital O) |
-| **PL Keyboard Layout** | `SUPER` + `Z` |
-| **EE Keyboard Layout** | `SUPER` + `X` |
-| **DE Keyboard Layout** | `SUPER` + `C` |
+| **Region Capture** | `SUPER` + `O` |
+| **00 Keyboard Layout** | `SUPER` + `Z` |
+| **01 Keyboard Layout** | `SUPER` + `X` |
+| **02 Keyboard Layout** | `SUPER` + `C` |
 | **Output Device 1** | `SUPER` + `R` |
 | **Output Device 2** | `SUPER` + `T` |
 | **Output Device 3** | `SUPER` + `Y` |
