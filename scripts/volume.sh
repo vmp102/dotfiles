@@ -39,15 +39,15 @@ if [[ "$1" == *%* ]]; then
   wpctl set-volume @DEFAULT_AUDIO_SINK@ "$1" --limit 1.0
 fi
 
-current_vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print int($2 * 100)}')
-is_muted=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -c "\[MUTED\]")
+# IMPROVED: Single awk call to handle rounding and mute status
+# Using printf "%.0f" ensures 0.58 becomes 58 instead of 57
+eval "$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{printf "current_vol=%.0f; is_muted=%d", $2 * 100, ($3 == "[MUTED]")}')"
 
 if [ "$is_muted" -eq 1 ]; then
-  # FIXED: Swapped synchronous hint for stack-tag
   notify-send -h string:x-dunst-stack-tag:volume-notify \
     -a "System" -u low -t 500 "Muted"
 else
-  # FIXED: Swapped synchronous hint for stack-tag and kept your percentage logic
+  # The 'int:value' hint allows Mako/Dunst to show a progress bar
   notify-send -h string:x-dunst-stack-tag:volume-notify \
     -h int:value:"$current_vol" \
     -a "System" -u low -t 500 "Volume: ${current_vol}%"
