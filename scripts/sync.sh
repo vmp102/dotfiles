@@ -3,7 +3,7 @@
 TARGET_DIR="$HOME/Documents/dotfiles"
 CONFIG_TARGET="$TARGET_DIR/.config"
 SCRIPTS_TARGET="$TARGET_DIR/scripts"
-CONFIGS=("fastfetch" "hypr" "kitty" "mako" "nvim" "rofi" "fuzzel")
+CONFIGS=("fastfetch" "hypr" "kitty" "mako" "nvim" "rofi" "fuzzel" "waybar")
 
 rm -rf "$SCRIPTS_TARGET"/*
 rm -rf "$CONFIG_TARGET"/*
