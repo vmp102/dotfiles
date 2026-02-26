@@ -1,5 +1,8 @@
+@define-color nord_4 #d8dee9; /* text */
+@define-color nord_9 #81a1c1; /* blue */
+
 * {
-    font-family: "JetBrainsMono Nerd Font Propo";
+    font-family: "JetBrainsMono";
     font-size: 13px;
     border: none;
     border-radius: 0;
@@ -9,29 +12,41 @@
 
 window#waybar {
     background-color: #000000;
-    color: #ffffff;
     border-bottom: none;
-}
-
-#workspaces,
-#window,
-#pulseaudio,
-#clock {
-    background: transparent;
-    color: #ffffff;
-    padding: 0 0px;
 }
 
 #workspaces button {
     padding: 0 5px;
-    color: #ffffff;
+    color: @nord_4;
     background: transparent;
 }
 
-#workspaces button.urgent {
-    color: #ff5555;
+#workspaces button.active,
+#workspaces button.focused {
+    color: @nord_9;
+    font-weight: bold;
 }
 
 #window {
+    color: @nord_4;
     font-weight: bold;
+    padding: 0 10px;
+}
+
+#pulseaudio {
+    color: @nord_4;
+    padding: 0 10px;
+}
+
+#clock {
+    color: @nord_4;
+    padding: 0 10px;
+}
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+.modules-right > widget:last-child > #clock {
+    padding-right: 5px;
 }
