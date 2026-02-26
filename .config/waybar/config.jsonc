@@ -6,7 +6,8 @@
 
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/window",
+        // "hyprland/window",
+        "mpris"
     ],
     "modules-center": [],
     "modules-right": [
@@ -32,9 +33,14 @@
     "hyprland/window": {
         "format": "{}",
     },
+    "mpris": {
+      "format": "{artist} - {title}",
+      "format-paused": "<i>{artist} - {title}</i>",
+      "on-click": "playerctl play-pause"
+    },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%d/%m/%y}"
     },
     "pulseaudio": {
         "scroll-step": 2,

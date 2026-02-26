@@ -36,6 +36,16 @@ window#waybar {
     font-weight: 600;
 }
 
+#mpris {
+    color: @nord_4;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+#mpris.paused {
+    font-style: italic;
+}
+
 #pulseaudio {
     color: @nord_4;
     padding: 0 10px;
