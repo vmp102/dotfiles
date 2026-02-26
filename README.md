@@ -1,6 +1,8 @@
-`Shell scripts -> /usr/local/bin/`
-`Dotfiles      -> ~/.config/`
-`.zshrc        -> ~/`
+Shell scripts -> /usr/local/bin/
+
+Dotfiles      -> ~/.config/
+
+.zshrc        -> ~/
 
 ### KEYBINDS (Main Modifier key: SUPER)
 
