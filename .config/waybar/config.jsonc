@@ -39,8 +39,9 @@
       "on-click": "playerctl play-pause"
     },
     "clock": {
+        "format": "{:%Y-%m-%d %H:%M:%S}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d/%m/%y}"
+        "interval": 1
     },
     "pulseaudio": {
         "scroll-step": 2,
