@@ -1,11 +1,5 @@
-/* Catppuccin Frappé Palette */
-@define-color base     #303446;
-@define-color surface0 #414559;
-@define-color overlay0 #737994;
-@define-color text     #c6d0f5;
-@define-color blue     #8ca0f3;
-@define-color sapphire #85c1dc;
-@define-color lavender #babbf1;
+@define-color nord_4 #d8dee9; /* text */
+@define-color nord_9 #81a1c1; /* blue */
 
 * {
     font-family: "JetBrainsMono";
@@ -17,51 +11,49 @@
 }
 
 window#waybar {
-    background-color: #000;
-    color: @text;
+    background-color: #000000;
     font-weight: 600;
     border-bottom: none;
 }
 
 #workspaces button {
     padding: 0 5px;
-    color: @overlay0;
+    color: @nord_4;
     background: transparent;
     font-weight: 600;
 }
 
 #workspaces button.active,
 #workspaces button.focused {
-    color: @sapphire;
+    color: @nord_9;
     font-weight: bold;
 }
 
 #window {
-    color: @text;
+    color: @nord_4;
     font-weight: bold;
     padding: 0 10px;
     font-weight: 600;
 }
 
 #mpris {
-    color: @lavender;
+    color: @nord_4;
     padding: 0 10px;
     font-weight: 600;
 }
 
 #mpris.paused {
     font-style: italic;
-    color: @overlay0;
 }
 
 #pulseaudio {
-    color: @blue;
+    color: @nord_4;
     padding: 0 10px;
     font-weight: 600;
 }
 
 #clock {
-    color: @text;
+    color: @nord_4;
     padding: 0 10px;
     font-weight: 600;
 }
