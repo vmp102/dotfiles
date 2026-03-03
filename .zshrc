@@ -17,8 +17,6 @@ alias time='tty-clock -c -C 4'
 alias sv='sudo -E nvim'
 alias nv='nvim'
 
-alias mdwm='cd ~/suckless/dwm; sudo make clean install'
-alias chypr='nvim ~/.config/hypr/'
 alias upddot='sync.sh; cd ~/Documents/dotfiles; git add .'
 
 # --- Keybindings ---
@@ -28,5 +26,5 @@ bindkey -s '^f' 'fastfetch^M'
 export PATH="$PATH:$HOME/.local/bin"
 export EDITOR='nvim'
 
-# --- Prompt & Startup ---
+# --- Startup ---
 fastfetch
