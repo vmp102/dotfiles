@@ -24,7 +24,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "catppuccin-frappe", -- Change this to "nord" to swap back!
+      colorscheme = "gruvbox", -- Change this to "nord" to swap back!
     },
   },
 }
