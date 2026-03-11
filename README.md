@@ -17,15 +17,10 @@ Dotfiles      -> ~/.config/
 | **Promote Window** | `SUPER` + `W` |
 | **Kill Active** | `CTRL` + `Q` |
 | **Switch Focus** | `SUPER` + `D` |
-| **Toggle Gaps** | `SUPER` + `G` |
 | **Screenshot** | `SUPER` + `Q` |
-| **Color Picker** | `SUPER` + `CTRL` + `Q` |
+| **Color Picker** | `SUPER` + `I` |
 | **Region Capture** | `SUPER` + `O` |
-| **Output Device 1** | `SUPER` + `R` |
-| **Output Device 2** | `SUPER` + `T` |
-| **Keyboard Layout 1** | `SUPER` + `Z` |
-| **Keyboard Layout 2** | `SUPER` + `X` |
-| **Keyboard Layout 3** | `SUPER` + `C` |
+| **Switch Audio Device** | `SUPER` + `R` |
 | **Switch to workspace** | `SUPER` + `NUM` |
 | **Move window to workspace** | `SUPER` + `CTRL` + `NUM` |
 | Move window | `SUPER` + `LMB` |
