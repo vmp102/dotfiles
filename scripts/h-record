@@ -1,0 +1,46 @@
+#!/bin/bash
+
+SAVE_DIR="$HOME/Videos/Recordings"
+LOCK_FILE="/tmp/wf-recorder.lock"
+PATH_FILE="/tmp/h-record-lastfile.txt"
+mkdir -p "$SAVE_DIR"
+
+# --- STOP LOGIC ---
+if [ -f "$LOCK_FILE" ]; then
+    PID=$(cat "$LOCK_FILE")
+    FILE_PATH=$(cat "$PATH_FILE")
+    
+    kill -SIGINT "$PID"
+    rm "$LOCK_FILE"
+    
+    # Copy file path to clipboard as a URI (enables CTRL+V pasting in most apps)
+    if command -v wl-copy >/dev/null; then
+        echo -n "file://$FILE_PATH" | wl-copy --type text/uri-list
+    fi
+
+    sleep 0.5
+    notify-send -u normal "Recording Saved" "Location: $SAVE_DIR\nFile: $(basename "$FILE_PATH")"
+    exit 0
+fi
+
+# --- START LOGIC ---
+GEOM=$(slurp)
+[ -z "$GEOM" ] && exit 1
+
+# Filename logic: YYYY-MM-DD_X
+DATE=$(date +%Y-%m-%d)
+X=1
+while [ -f "$SAVE_DIR/${DATE}_${X}.mp4" ]; do
+    ((X++))
+done
+FILENAME="$SAVE_DIR/${DATE}_${X}.mp4"
+echo "$FILENAME" > "$PATH_FILE"
+
+# Audio: Attempting to find the default monitor/sink for Pipewire/Pulse
+# If this still fails, ensure 'pulseaudio-utils' is installed
+AUDIO_DEVICE=$(pactl get-default-sink).monitor
+
+# Start recorder (No start notification per request)
+wf-recorder --audio="$AUDIO_DEVICE" -g "$GEOM" -r 60 -f "$FILENAME" &
+
+echo $! > "$LOCK_FILE"
