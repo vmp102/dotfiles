@@ -10,14 +10,19 @@ return {
         },
       },
       sources = {
+        explorer = {
+          hidden = true,
+          layout = {
+            layout = {
+              position = "right",
+            },
+          },
+        },
         files = {
-          hidden = true, -- show dotfiles
-          ignored = false, -- show files in .gitignore (set to true if you want to keep gitignore active)
+          hidden = true,
+          ignored = false,
         },
         grep = {
-          hidden = true,
-        },
-        explorer = {
           hidden = true,
         },
       },
