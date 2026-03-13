@@ -8,19 +8,19 @@ Dotfiles      -> ~/.config/
 
 | Action | Shortcut |
 | :--- | :--- |
-| **Terminal** | `SUPER` + `RETURN` |
-| **Web Browser** | `SUPER` + `B` |
+| **Terminal** | `SUPER` + `Q` |
+| **Web Browser** | `SUPER` + `W` |
 | **File Manager** | `SUPER` + `E` |
-| **Fuzzel (menu)** | `SUPER` + `SPACE` |
-| **Toggle Floating/Tiling** | `SUPER` + `V` |
+| **Fuzzel (menu)** | `SUPER` + `R` |
+| **Toggle Floating/Tiling** | `SUPER` + `A` |
 | **Fullscreen** | `SUPER` + `F` |
-| **Promote Window** | `SUPER` + `W` |
+| **Promote Window** | `SUPER` + `S` |
 | **Kill Active** | `CTRL` + `Q` |
 | **Switch Focus** | `SUPER` + `D` |
-| **Screenshot** | `SUPER` + `Q` |
-| **Color Picker** | `SUPER` + `I` |
-| **Region Capture** | `SUPER` + `O` |
-| **Switch Audio Device** | `SUPER` + `R` |
+| **Screenshot** | `SUPER` + `C` |
+| **Color Picker** | `SUPER` + `X` |
+| **Region Capture** | `SUPER` + `Z` |
+| **Switch Audio Device** | `SUPER` + `V` |
 | **Switch to workspace** | `SUPER` + `NUM` |
 | **Move window to workspace** | `SUPER` + `CTRL` + `NUM` |
 | Move window | `SUPER` + `LMB` |
